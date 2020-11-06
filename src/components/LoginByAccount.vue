@@ -107,9 +107,8 @@ export default {
         this.passwordBorderColor = 'borderColor3'
         flag = false
       }
-      alert('机构后缀：' + this.institution + '，用户名：' + this.loginname + '，密码：' + this.password)
       if (flag) {
-        alert('请求后端api')
+        alert('机构后缀：' + this.institution + '，用户名：' + this.loginname + '，密码：' + this.password)
       }
       return false
     }

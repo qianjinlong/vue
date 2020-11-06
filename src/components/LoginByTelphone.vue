@@ -82,9 +82,9 @@ export default {
         this.passwordBorderColor = 'borderColor3'
         flag = false
       }
-      alert('手机号：' + this.account + '，密码：' + this.password)
+      
       if (flag) {
-        alert('请求后端api')
+        alert('手机号：' + this.account + '，密码：' + this.password)
       }
       return false
     }

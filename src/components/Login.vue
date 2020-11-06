@@ -20,10 +20,10 @@
               </span>
               <span class="login_telphone">
                 <span
-                  class="login_title"
+                  :class="title='login_title2'"
                   @click="tabId=1"
                 >账号登录</span>
-                <span class="login_logo_blue"></span>
+                <span :class="blue='login_logo_blue2'"></span>
               </span>
             </div>
           </div>
@@ -36,17 +36,17 @@
             <div class="login_top">
               <span class="login_telphone">
                 <span
-                  class="login_title"
+                  :class="title='login_title2'"
                   @click="tabId=0"
                 >手机号码登录</span>
-                <span class="login_logo_blue"></span>
+                <span :class="blue='login_logo_blue2'"></span>
               </span>
               <span class="login_telphone">
                 <span
                   class="login_title"
                   @click="tabId=1"
                 >账号登录</span>
-                <span class="login_logo_blue"></span>
+                <span class="login_logo_blue" ></span>
               </span>
             </div>
           </div>
@@ -111,7 +111,9 @@ export default {
   name: 'Login',
   data () {
     return {
-      tabId: 0
+      tabId: 0,
+      title: false,
+      blue: false
     }
   },
   components: {
@@ -192,6 +194,15 @@ export default {
   font-weight: bold;
   text-align: center;
 }
+.login_title2 {
+  width: 60%;
+  margin: 0 auto;
+  display: block;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  color: rgba(0,0,0,.45);
+}
 
 .login_title:hover {
   cursor: pointer;
@@ -206,6 +217,17 @@ export default {
   margin-bottom: 40px;
   border-radius: 4px;
   background-color: #007aff;
+}
+
+.login_logo_blue2 {
+  display: block;
+  width: 32px;
+  height: 5px;
+  margin: 0 auto;
+  margin-top: 10px;
+  margin-bottom: 40px;
+  border-radius: 4px;
+  background-color: #FFF;
 }
 
 .account_view,
