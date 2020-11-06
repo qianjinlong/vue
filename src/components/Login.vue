@@ -204,6 +204,7 @@ export default {
   color: rgba(0,0,0,.45);
 }
 
+.login_title2:hover,
 .login_title:hover {
   cursor: pointer;
 }
